@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -26,16 +26,76 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        Addp = new javax.swing.JButton();
+        Addp1 = new javax.swing.JButton();
+        Addp2 = new javax.swing.JButton();
+        Addp3 = new javax.swing.JButton();
+        Addp4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Home");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, -1, -1));
+        jPanel2.setBackground(new java.awt.Color(255, 0, 51));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\hospital.png")); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, -1));
+
+        Addp.setBackground(new java.awt.Color(51, 51, 255));
+        Addp.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Addp.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\information.png")); // NOI18N
+        Addp.setText("Information");
+        Addp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel2.add(Addp, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 270, -1));
+
+        Addp1.setBackground(new java.awt.Color(51, 51, 255));
+        Addp1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Addp1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\patient (2).png")); // NOI18N
+        Addp1.setText("Add patient record");
+        Addp1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Addp1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Addp1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Addp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, -1));
+
+        Addp2.setBackground(new java.awt.Color(51, 51, 255));
+        Addp2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Addp2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\health-check.png")); // NOI18N
+        Addp2.setText("Add dignostic record");
+        Addp2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel2.add(Addp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 270, -1));
+
+        Addp3.setBackground(new java.awt.Color(51, 51, 255));
+        Addp3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Addp3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\clock.png")); // NOI18N
+        Addp3.setText("Add history patient");
+        Addp3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel2.add(Addp3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 270, -1));
+
+        Addp4.setBackground(new java.awt.Color(51, 51, 255));
+        Addp4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        Addp4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\updated.png")); // NOI18N
+        Addp4.setText("Update patient");
+        Addp4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jPanel2.add(Addp4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 270, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 770));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aditya\\Downloads\\Hospital Management system (1).png")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Addp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Addp1ActionPerformed
+        new Addpatient().setVisible(true);
+    }//GEN-LAST:event_Addp1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,6 +133,13 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Addp;
+    private javax.swing.JButton Addp1;
+    private javax.swing.JButton Addp2;
+    private javax.swing.JButton Addp3;
+    private javax.swing.JButton Addp4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
